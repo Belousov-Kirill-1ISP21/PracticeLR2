@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    background-color: #f5f5f5;
+    padding: 0;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.column {
+    width: 54vh;
+    height: 78vh;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: none;
+    outline: none;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#inputColumn{
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#outputColumn{
+    border: 1px solid #8c729589;
+    background-color: #fbeffb;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+textarea {
+    width: 90%;
+    height: 70vh;
+    background-color: #f9f9f9;
+    border: none;
+    outline: none;
+    resize: none;
+    color: grey;
+    border-radius: 14px;
+    margin-left: 5%;
+    font-size: 2vh;
+    overflow-y: auto;
+}
+
+#inputText{
+    border: none;
+    background-color: #f9f9f9;
+}
+
+#outputText{
+    border: none;
+    background-color: #fbeffb;
+}
+
+#alphabet {
+    background-color: #f5f5f5;
+    margin-left: 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+}
+
+h3{
+    font-size: 2.5vh;
+}
+
+#alphabetDisplay{
+    font-size: 1.75vh;
+}
+
+#operationsInfo{
+    font-size: 1.75vh;
+    overflow-y: auto;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6vh;
+    height: 2vh;
+    padding: 5px 10px;
+    border-radius: 1vh;
+    font-size: 1.5vh;
+    margin-top: 5px;
+    margin-left: 15px;
+    background-color: white;
+    margin-left:5%;
+}
+
+#inputH2 {
+    border: 2px solid #9e9e9e;
+    color: #9e9e9e;
+    padding: 1%;
+}
+
+#outputH2 {
+    border: 2px solid #d0a0d0;
+    background-color: #f0e0f0;
+    color: #bd78bd;
+    padding: 1%;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .column {
+        width: 90%;
+        height: 28vh;
+    }
+
+    h3{
+        margin: 1%;
+        margin-top: 4%;
+    }
+
+    #alphabet {
+        margin-top: 4%;
+        height: 34vh;
+    }
+}
+
